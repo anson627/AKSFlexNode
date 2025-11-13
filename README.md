@@ -167,7 +167,7 @@ aks-flex-node unbootstrap --config /etc/aks-flex-node/config.json
 **Authentication Flow:**
 - If you haven't run `az login` or your token is expired, the bootstrap process will automatically prompt you to login interactively (if Service Pinciple isn't configured)
 - The login prompt will appear in your terminal with device code authentication when needed
-- Once authenticated, the service will use your Azure CLI credentials for all operations
+- Once authenticated, the service will use your Azure CLI credentials for operations like arc join and role assignments
 
 ### 🏭 Production Mode
 **Best for:** Automated deployments and production environments
