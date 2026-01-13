@@ -53,6 +53,7 @@ func (i *Installer) installRunc() error {
 	if err != nil {
 		return fmt.Errorf("failed to construct runc download URL: %w", err)
 	}
+
 	tempFile := fmt.Sprintf("/tmp/%s", runcFileName)
 
 	// Clean up any existing runc temp files from /tmp directory to avoid conflicts
